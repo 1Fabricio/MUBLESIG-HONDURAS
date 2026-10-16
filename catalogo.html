@@ -4,312 +4,340 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MUBLESIG HONDURAS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
-    <body>
-        <header>
-            <h1>MUBLESIG HONDURAS</h1>
-            <p>Se el primero en enterarte de nuestras novedades, descuentos y lanzamientos.</p>
-            <img src="https://muebleriasholguinsac.com/wp-content/uploads/2018/12/logo-1-1.png" alt="Logo">         
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="catalogo.html">Catalogo</a></li>
-                    <li><a href="licitaciones.html">Licitaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+    <body class="d-flex flex-column min-vh-100 bg-light">
+        <header class="text-center text-white py-4 px-3 border-bottom border-4" style="background-color:#394032; border-color:#9F7E4A !important">
+            <h1 class="display-5 fw-bold">MUBLESIG HONDURAS</h1>
+            <p class="lead px-3">Se el primero en enterarte de nuestras novedades, descuentos y lanzamientos.</p>
+            <img class="img-fluid bg-white rounded p-2 mb-3" style="max-height:90px" src="https://muebleriasholguinsac.com/wp-content/uploads/2018/12/logo-1-1.png" alt="Logo">        
+            
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-center border-top border-bottom border-3" style="background-color:#454F2D; border-color:#9F7E4A !important">
+                <button class="navbar-toggler text-white my-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">☰ Menú</button>
+                <ul class="navbar-nav navbar-collapse collapse justify-content-center align-items-lg-center" id="menuPrincipal">
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold active" style="border-bottom:2px solid #9F7E4A"  aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold" style="border-bottom:2px solid #9F7E4A"  aria-current="page" href="catalogo.html">Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold" style="border-bottom:2px solid #9F7E4A"  aria-current="page" href="licitaciones.html">Licitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold" style="border-bottom:2px solid #9F7E4A"  aria-current="page" href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
 
-            <div>
-                <h3>Telefonos de atencion al cliente</h3>
-                <ul>
+            <div class="mt-3 small">
+                <h3 class="h6 text-uppercase fw-bold">Telefonos de atencion al cliente</h3>
+                <ul class="list-unstyled mb-2">
                     <li>Telefono fijo: 2234-8734</li>
                     <li>Telefono movil: 9889-3452</li>
                 </ul>
-                <h3>Horario de atencion </h3>
-                <p>Lun-Vie 8am - 5pm</p>
+                <h3 class="h6 text-uppercase fw-bold">Horario de atencion </h3>
+                <p class="mb-0">Lun-Vie 8am - 5pm</p>
             </div>
         </header>
-        <main>
-            <section>
-                <h2>Catálogo de Productos</h2>
-                <article>
-                    <h3>Beanbag Cuero Textil</h3>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/products/BE0705_1_600x.jpg?v=1767890580" alt="Beanbag Cuero Textil">
-                        <figcaption>Beanbag Cuero Textil</figcaption>
-                    </figure>
-                    <p><strong>L 3,295.00</strong></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Excelentes para espacios casuales. Con un beanbag a la vista, las ganas de dejarse caer son irresistibles. Cuando nos sentamos en uno de ellos, las bolitas de duroport se adaptan a nuestra postura favorita para descansar. Es perfecto para ambientes informales o personales, como la sala familiar o una habitación que puede ser infantil o juvenil.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Cuero textil aqua</li>
-                            <li>Relleno de bolitas de duroport</li>
-                            <li>Con zipper que permite cambiar el relleno</li>
-                            <li>Ocupa un espacio aproximado de 80 cm</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+        <main class="container my-5">
+            <section id="Cotizaciones" class="row g-4 mb-5">
+                <h2 class="col-12 fw-bold border-bottom pb-2" style="color:#534332; border-color:#9F7E4A !important">Catálogo de Productos</h2>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Beanbag Cuero Textil</h3>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/products/BE0705_1_600x.jpg?v=1767890580" alt="Beanbag Cuero Textil">
+                            <figcaption class="figure-caption mt-2">Beanbag Cuero Textil</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 3,295.00</strong></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Excelentes para espacios casuales. Con un beanbag a la vista, las ganas de dejarse caer son irresistibles. Cuando nos sentamos en uno de ellos, las bolitas de duroport se adaptan a nuestra postura favorita para descansar. Es perfecto para ambientes informales o personales, como la sala familiar o una habitación que puede ser infantil o juvenil.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Cuero textil aqua</li>
+                                <li class="list-group-item">Relleno de bolitas de duroport</li>
+                                <li class="list-group-item">Con zipper que permite cambiar el relleno</li>
+                                <li class="list-group-item">Ocupa un espacio aproximado de 80 cm</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>    
                 </article>
 
-                <article>
-                    <h3>Librera Basic Angosta Alta</h3>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/JC0635_600x.jpg?v=1717795275" alt="Librera Basic Angosta Alta">
-                        <figcaption>Librera Basic Angosta Alta</figcaption>
-                    </figure>
-                    <p><strong>L 2,995.00</strong></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Estas libreras utilitarias se pueden utilizar en diversos espacios: la oficina, en la entrada de la casa, en el dormitorio de los estudiantes junto a su escritorio, incluso en la sala familiar. Los entrepaños ajustables son bastante versátiles y brindan muchas posibilidades para organizar accesorios y objetos de diversos tamaños. Toda la madera utilizada para fabricar esta librera proviene de bosques sostenibles
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Folio blanco</li>
-                            <li>4 entrepaños</li>
-                            <li>Frente 41cm, Prof 27cm, Alto 203cm</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Librera Basic Angosta Alta</h3>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/JC0635_600x.jpg?v=1717795275" alt="Librera Basic Angosta Alta">
+                            <figcaption class="figure-caption mt-2">Librera Basic Angosta Alta</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 2,995.00</strong></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Estas libreras utilitarias se pueden utilizar en diversos espacios: la oficina, en la entrada de la casa, en el dormitorio de los estudiantes junto a su escritorio, incluso en la sala familiar. Los entrepaños ajustables son bastante versátiles y brindan muchas posibilidades para organizar accesorios y objetos de diversos tamaños. Toda la madera utilizada para fabricar esta librera proviene de bosques sostenibles
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Folio blanco</li>
+                                <li class="list-group-item">4 entrepaños</li>
+                                <li class="list-group-item">Frente 41cm, Prof 27cm, Alto 203cm</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div> 
                 </article>
 
-                <article>
-                    <h3>Mesa De Centro Lecco</h3>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/BB0884_600x.jpg?v=1758560683" alt="Mesa De Centro Lecco">
-                        <figcaption>Mesa De Centro Lecco</figcaption>
-                    </figure>
-                    <p><strong>L 7,595.00</strong></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Con un diseño moderno que equilibra lo sofisticado y funcional, esta mesa de centro se convierte en un punto focal del espacio. Su top de ceramica en tono negro con vetas sutiles aporta profundidad visual y una textura elegante, ideal para complementar interiores contemporaneos. La base metalica en acabado bronce añade un contraste calido y refinado, elevando su presencia con un toque de distincion. Compacta y versatil, esta pieza no solo es estetica, sino tambien resistente y facil de mantener. Perfecta para cualquier tipo de sala que buscan estilo y caracter en cada detalle, sin renunciar a la practicidad del dia a dia.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Top piedra sinterizada tipo ceramica marmoleado negro</li>
-                            <li>Patas de metal color bronce</li>
-                            <li>Diámetro 90cm; Alto: 45cm</li>
-                            <li>Peso máximo que soporta Top: 40kg</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Mesa De Centro Lecco</h3>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/BB0884_600x.jpg?v=1758560683" alt="Mesa De Centro Lecco">
+                            <figcaption class="figure-caption mt-2">Mesa De Centro Lecco</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 7,595.00</strong></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Con un diseño moderno que equilibra lo sofisticado y funcional, esta mesa de centro se convierte en un punto focal del espacio. Su top de ceramica en tono negro con vetas sutiles aporta profundidad visual y una textura elegante, ideal para complementar interiores contemporaneos. La base metalica en acabado bronce añade un contraste calido y refinado, elevando su presencia con un toque de distincion. Compacta y versatil, esta pieza no solo es estetica, sino tambien resistente y facil de mantener. Perfecta para cualquier tipo de sala que buscan estilo y caracter en cada detalle, sin renunciar a la practicidad del dia a dia.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Top piedra sinterizada tipo ceramica marmoleado negro</li>
+                                <li class="list-group-item">Patas de metal color bronce</li>
+                                <li class="list-group-item">Diámetro 90cm; Alto: 45cm</li>
+                                <li class="list-group-item">Peso máximo que soporta Top: 40kg</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div> 
                 </article>
 
-                <article>
-                    <h3>Gavetero Oslo 5gvts</h3>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/products/AB0388_c297bcf2-29c0-4d8f-9f2d-51b00666d3a3_600x.jpg?v=1664827802" alt="Gavetero Oslo 5gvts">
-                        <figcaption>Gavetero Oslo 5gvts</figcaption>
-                    </figure>
-                    <p><strong>L 7,595.00</strong></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Este gavetero es excelente para nunca perder una apariencia hogareña y con mucho diseño. La combinación de materiales y colores es moderna pero casual. Tiene un gran potencial de organización y almacenaje con sus 5 gavetas; ideal para organizar aquellos ambientes con muchos elementos sueltos.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Folio blanco-roble</li>
-                            <li>2 gavetas pequeñas, patas madera natural roble</li>
-                            <li>3 gavetas grandes</li>
-                            <li>Peso máximo que soporta top: 25kg; gavetas peq: 6kg; gaveta grande: 9kg</li>
-                            <li>Frente 99cm, Prof 39cm, Alto 101cm</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Gavetero Oslo 5gvts</h3>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/products/AB0388_c297bcf2-29c0-4d8f-9f2d-51b00666d3a3_600x.jpg?v=1664827802" alt="Gavetero Oslo 5gvts">
+                            <figcaption class="figure-caption mt-2">Gavetero Oslo 5gvts</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 7,595.00</strong></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Este gavetero es excelente para nunca perder una apariencia hogareña y con mucho diseño. La combinación de materiales y colores es moderna pero casual. Tiene un gran potencial de organización y almacenaje con sus 5 gavetas; ideal para organizar aquellos ambientes con muchos elementos sueltos.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Folio blanco-roble</li>
+                                <li class="list-group-item">2 gavetas pequeñas, patas madera natural roble</li>
+                                <li class="list-group-item">3 gavetas grandes</li>
+                                <li class="list-group-item">Peso máximo que soporta top: 25kg; gavetas peq: 6kg; gaveta grande: 9kg</li>
+                                <li class="list-group-item">Frente 99cm, Prof 39cm, Alto 101cm</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Zapatera Shoes 2gvts</h3>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/AB0566_600x.jpg?v=1717795664" alt="Zapatera Shoes 2gvts">
-                        <figcaption>Zapatera Shoes 2gvts</figcaption>
-                    </figure>
-                    <p><strong>L 3,295.00</strong></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Cuando el closet no es suficiente para guardar de manera eficiente los zapatos, este modelo con un único espacio de organización de zapatos es una muy buena opción. El diseño es muy simple donde se privilegia la discreción y la funcionalidad, utilizando el espacio de pared de una forma mas eficiente; Este modelo debe ser anclado a la pared.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Folio blanco</li>
-                            <li>2 gavetas</li>
-                            <li>Frente:70.3cm, Prof:24.05cm, Altura:85.2cm</li>
-                            <li>Peso maximo que soporta top:4kg;gavetas:5kg</li>
-                            <li>Capacidad 12 pares de zapatos</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Zapatera Shoes 2gvts</h3>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/AB0566_600x.jpg?v=1717795664" alt="Zapatera Shoes 2gvts">
+                            <figcaption class="figure-caption mt-2">Zapatera Shoes 2gvts</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 3,295.00</strong></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Cuando el closet no es suficiente para guardar de manera eficiente los zapatos, este modelo con un único espacio de organización de zapatos es una muy buena opción. El diseño es muy simple donde se privilegia la discreción y la funcionalidad, utilizando el espacio de pared de una forma mas eficiente; Este modelo debe ser anclado a la pared.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Folio blanco</li>
+                                <li class="list-group-item">2 gavetas</li>
+                                <li class="list-group-item">Frente:70.3cm, Prof:24.05cm, Altura:85.2cm</li>
+                                <li class="list-group-item">Peso maximo que soporta top:4kg;gavetas:5kg</li>
+                                <li class="list-group-item">Capacidad 12 pares de zapatos</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Librera Mercurio</h3>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/AB0566_600x.jpg?v=1717795664" alt="Zapatera Shoes 2gvts">
-                        <figcaption>Librera Mercurio</figcaption>
-                    </figure>
-                    <p><strong>L 12,595.00</strong></p>
-                    <p> <strong>Descripcion</strong><br>
-                        El complemento ideal para el escritorio Urano que cuenta con sus mismos tonos y materiales, así como se ajusta a sus proporciones idealmente. Sera  ideal para organizar y almacenar todos aquellos objetos para realizar su trabajo sin tener que mostrarlos, manteniendo una apariencia limpia y ordenada.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Melamina nogal- negro</li>
-                            <li>4 Puertas</li>
-                            <li>Frente 170cm, Prof 40cm, Alto 125cm</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Librera Mercurio</h3>
+                        <figure style="max-height:320px" class="text-center mb-3">
+                            <img class="img-fluid rounded" src="https://kalea.com.hn/cdn/shop/files/JC1077_600x.jpg?v=1714189222" alt="Zapatera Shoes 2gvts">
+                            <figcaption class="figure-caption mt-2">Librera Mercurio</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 12,595.00</strong></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            El complemento ideal para el escritorio Urano que cuenta con sus mismos tonos y materiales, así como se ajusta a sus proporciones idealmente. Sera  ideal para organizar y almacenar todos aquellos objetos para realizar su trabajo sin tener que mostrarlos, manteniendo una apariencia limpia y ordenada.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Melamina nogal- negro</li>
+                                <li class="list-group-item">4 Puertas</li>
+                                <li class="list-group-item">Frente 170cm, Prof 40cm, Alto 125cm</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
             </section>
 
-            <section>
-                <h2>Descuentos</h2>
-                <article>
-                    <h3>Silla Josie</h3>
-                    <span>¡En Oferta!</span>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/BE1417_600x.jpg?v=1758560753" alt="Silla Josie">
-                        <figcaption>Silla Josie</figcaption>
-                    </figure>
-                    <p><strong>L. 7,995.00</strong> <del>L. 8,995.00</del></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Diseñada para ofrecer comodidad con estilo, esta silla giratoria tapizada en tela Cona cafe es la fusion perfecta entre elegancia y funcionalidad. Su silueta envolvente con brazos integrados proporciona una experiencia acogedora, ideal para largas jornadas de lectura o trabajo. La textura suave de la tela agrega un toque calido, mientras que la base de metal negro aporta estabilidad y un aire moderno e industrial. Su sistema giratorio la convierte en una pieza versatil para oficinas, salas o espacios creativos. Esta silla no solo sigue la tendencia actual del diseño confortable, sino que tambien eleva cualquier ambiente con su presencia contemporanea.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Tela Cona cafe</li>
-                            <li>Base metal negro-Giratoria</li>
-                            <li>Frente: 78cm; Prof: 83cm; Alto: 86cm</li>
-                            <li>Peso maximo que soporta: 110kg</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+            <section id="Cotizaciones" class="row g-4 mb-5">
+                <h2 class="col-12 fw-bold border-bottom pb-2" style="color:#534332; border-color:#9F7E4A !important">Descuentos</h2>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Silla Josie</h3>
+                        <span class="badge fs-6 mb-2 align-self-start" style="background-color:#9F7E4A">¡En Oferta!</span>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/BE1417_600x.jpg?v=1758560753" alt="Silla Josie">
+                            <figcaption class="figure-caption mt-2">Silla Josie</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L. 7,995.00</strong> <del class="text-muted fs-6 ms-2">L. 8,995.00</del></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Diseñada para ofrecer comodidad con estilo, esta silla giratoria tapizada en tela Cona cafe es la fusion perfecta entre elegancia y funcionalidad. Su silueta envolvente con brazos integrados proporciona una experiencia acogedora, ideal para largas jornadas de lectura o trabajo. La textura suave de la tela agrega un toque calido, mientras que la base de metal negro aporta estabilidad y un aire moderno e industrial. Su sistema giratorio la convierte en una pieza versatil para oficinas, salas o espacios creativos. Esta silla no solo sigue la tendencia actual del diseño confortable, sino que tambien eleva cualquier ambiente con su presencia contemporanea.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Tela Cona cafe</li>
+                                <li class="list-group-item">Base metal negro-Giratoria</li>
+                                <li class="list-group-item">Frente: 78cm; Prof: 83cm; Alto: 86cm</li>
+                                <li class="list-group-item">Peso maximo que soporta: 110kg</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Trinchante Ry</h3>
-                    <span>¡En Oferta!</span>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/CE0278_600x.jpg?v=1717797096" alt="Trinchante Ry">
-                        <figcaption>Trinchante Ry</figcaption>
-                    </figure>
-                    <p><strong>L 8,595.00</strong><del>L 9,595.00</del></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Este trinchante parece una restauración de alguna pieza antigua. El resultado es una pieza con mucho estilo y carácter. La combinación de colores y materiales la hacen perfecta para un comedor que se decante por una mezcla entre el estilo industrial o uno mucho mas maximalista.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Folio negro mate-nogal</li>
-                            <li>Patas de madera</li>
-                            <li>2 gavetas -2 puertas con jaladores metalicos</li>
-                            <li>Frente:150.3cm, Prof:40.1cm, Altura:72.2cm</li>
-                            <li>Peso máximo que soporta top:30kg;gavetas:6kg;puertas:14 - 25kg</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Trinchante Ry</h3>
+                        <span class="badge fs-6 mb-2 align-self-start" style="background-color:#9F7E4A">¡En Oferta!</span>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/CE0278_600x.jpg?v=1717797096" alt="Trinchante Ry">
+                            <figcaption class="figure-caption mt-2">Trinchante Ry</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 8,595.00</strong><del class="text-muted fs-6 ms-2">L 9,595.00</del></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Este trinchante parece una restauración de alguna pieza antigua. El resultado es una pieza con mucho estilo y carácter. La combinación de colores y materiales la hacen perfecta para un comedor que se decante por una mezcla entre el estilo industrial o uno mucho mas maximalista.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Folio negro mate-nogal</li>
+                                <li class="list-group-item">Patas de madera</li>
+                                <li class="list-group-item">2 gavetas -2 puertas con jaladores metalicos</li>
+                                <li class="list-group-item">Frente:150.3cm, Prof:40.1cm, Altura:72.2cm</li>
+                                <li class="list-group-item">Peso máximo que soporta top:30kg;gavetas:6kg;puertas:14 - 25kg</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Consola Lift</h3>
-                    <span>¡En Oferta!</span>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/CD0130_600x.jpg?v=1764699749" alt="Consola Lift">
-                        <figcaption>Consola Lift</figcaption>
-                    </figure>
-                    <p><strong>L 4,995.00</strong><del>L 5,595.00</del></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Una consola en un estilo y material clásico, una pieza ideal para complementar ambientes con otros estilos en contraste y lograr un espacio contemporáneo. Cuenta con un espacio de organización para elementos decorativos como funcionales.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Melamina negro</li>
-                            <li>Espacio para almacenamiento</li>
-                            <li>Frente: 120cm; Prof: 36cm; Alto: 78cm</li>
-                            <li>Peso maximo que soporta top:15kg</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Consola Lift</h3>
+                        <span class="badge fs-6 mb-2 align-self-start" style="background-color:#9F7E4A">¡En Oferta!</span>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/CD0130_600x.jpg?v=1764699749" alt="Consola Lift">
+                            <figcaption class="figure-caption mt-2">Consola Lift</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 4,995.00</strong><del class="text-muted fs-6 ms-2">L 5,595.00</del></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Una consola en un estilo y material clásico, una pieza ideal para complementar ambientes con otros estilos en contraste y lograr un espacio contemporáneo. Cuenta con un espacio de organización para elementos decorativos como funcionales.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Melamina negro</li>
+                                <li class="list-group-item">Espacio para almacenamiento</li>
+                                <li class="list-group-item">Frente: 120cm; Prof: 36cm; Alto: 78cm</li>
+                                <li class="list-group-item">Peso maximo que soporta top:15kg</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Mesa De Comedor Extension Libr</h3>
-                    <span>¡En Oferta!</span>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/CC0802_1_600x.jpg?v=1748457494" alt="Mesa De Comedor Extension Libr">
-                        <figcaption>Mesa De Comedor Extension Libr</figcaption>
-                    </figure>
-                    <p><strong>L 9,895.00</strong><del>L 10,995.00</del></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Este modelo de madera es una fusión perfecta entre calidez y minimalismo que añadirá un toque de sofisticación al ambiente del comedor. Su belleza reside en las hermosas vetas y tonos cálidos que aportan una sensación acogedora a cualquier ambiente. Este modelo encaja dentro de las tendencias mundiales que se están atreviendo a combinar la calidez de la madera natural con la elegancia del minimalismo, dándole así una nueva interpretación al minimalismo atemporal. Es además una mesa que se puede extender para acomodar a mas invitados a la mesa.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Top enchape haya 18mm</li>
-                            <li>Patas madera haya</li>
-                            <li>Frente:150-190cm; Prof:90cm;Alto:75cm</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Mesa De Comedor Extension Libr</h3>
+                        <span class="badge fs-6 mb-2 align-self-start" style="background-color:#9F7E4A">¡En Oferta!</span>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/CC0802_1_600x.jpg?v=1748457494" alt="Mesa De Comedor Extension Libr">
+                            <figcaption class="figure-caption mt-2">Mesa De Comedor Extension Libr</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 9,895.00</strong><del class="text-muted fs-6 ms-2">L 10,995.00</del></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Este modelo de madera es una fusión perfecta entre calidez y minimalismo que añadirá un toque de sofisticación al ambiente del comedor. Su belleza reside en las hermosas vetas y tonos cálidos que aportan una sensación acogedora a cualquier ambiente. Este modelo encaja dentro de las tendencias mundiales que se están atreviendo a combinar la calidez de la madera natural con la elegancia del minimalismo, dándole así una nueva interpretación al minimalismo atemporal. Es además una mesa que se puede extender para acomodar a mas invitados a la mesa.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Top enchape haya 18mm</li>
+                                <li class="list-group-item">Patas madera haya</li>
+                                <li class="list-group-item">Frente:150-190cm; Prof:90cm;Alto:75cm</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Modulo Tv Ikast 1 Puerta</h3>
-                    <span>¡En Oferta!</span>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/JC1077_600x.jpg?v=1714189222" alt="Modulo Tv Ikast 1 Puerta">
-                        <figcaption>Modulo Tv Ikast 1 Puerta</figcaption>
-                    </figure>
-                    <p><strong>L 13,595.00</strong><del>L 14,595.00</del></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Este moderno modulo de TV en color roble hickory y blanco es la eleccion perfecta para cualquier sala contemporanea. Su diseño combina funcionalidad y estetica, ofreciendo un amplio espacio de almacenamiento con dos puertas y dos gavetas, ademas de estantes abiertos ideales para dispositivos electronicos y decoraciones. Los acabados en roble hickory aportan una calidez natural, mientras que los detalles en blanco añaden un toque de frescura y elegancia. Sus lineas limpias y estilo minimalista reflejan las ultimas tendencias en diseño de interiores, creando un ambiente organizado y sofisticado. Ideal para complementar cualquier decoracion moderna y mantener todo en orden.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Folio roble Hickory-blanco</li>
-                            <li>Patas MDF color roble</li>
-                            <li>1 puerta-2 gavetas-1 entrepaño</li>
-                            <li>Frente: 181.9cm; Prof: 51.2cm; Alto: 61.6cm</li>
-                            <li>Peso maximo que soporta top: 60kg; Gaveta: 5kg; Entrepaños: 20kg</li>
-                            <li>Jaladores madera color roble</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Modulo Tv Ikast 1 Puerta</h3>
+                        <span class="badge fs-6 mb-2 align-self-start" style="background-color:#9F7E4A">¡En Oferta!</span>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/JC1077_600x.jpg?v=1714189222" alt="Modulo Tv Ikast 1 Puerta">
+                            <figcaption class="figure-caption mt-2">Modulo Tv Ikast 1 Puerta</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 13,595.00</strong><del class="text-muted fs-6 ms-2">L 14,595.00</del></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Este moderno modulo de TV en color roble hickory y blanco es la eleccion perfecta para cualquier sala contemporanea. Su diseño combina funcionalidad y estetica, ofreciendo un amplio espacio de almacenamiento con dos puertas y dos gavetas, ademas de estantes abiertos ideales para dispositivos electronicos y decoraciones. Los acabados en roble hickory aportan una calidez natural, mientras que los detalles en blanco añaden un toque de frescura y elegancia. Sus lineas limpias y estilo minimalista reflejan las ultimas tendencias en diseño de interiores, creando un ambiente organizado y sofisticado. Ideal para complementar cualquier decoracion moderna y mantener todo en orden.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Folio roble Hickory-blanco</li>
+                                <li class="list-group-item">Patas MDF color roble</li>
+                                <li class="list-group-item">1 puerta-2 gavetas-1 entrepaño</li>
+                                <li class="list-group-item">Frente: 181.9cm; Prof: 51.2cm; Alto: 61.6cm</li>
+                                <li class="list-group-item">Peso maximo que soporta top: 60kg; Gaveta: 5kg; Entrepaños: 20kg</li>
+                                <li class="list-group-item">Jaladores madera color roble</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Mesa Auxiliar Cirel</h3>
-                    <span>¡En Oferta!</span>
-                    <figure>
-                        <img src="https://kalea.com.hn/cdn/shop/files/BC0509_600x.jpg?v=1751387522" alt="Mesa Auxiliar Cirel">
-                        <figcaption>Mesa Auxiliar Cirel</figcaption>
-                    </figure>
-                    <p><strong>L 3,595.00</strong><del>L 5,995.00</del></p>
-                    <p> <strong>Descripcion</strong><br>
-                        Una pieza que evoca equilibrio y expresion en cada trazo geometrico. Esta mesa de centro en melamina color nogal fusiona arte y funcionalidad en una silueta contemporanea que desafia lo convencional. Su diseño en niveles no solo aporta dinamismo visual, sino tambien practicidad, al ofrecer espacios versatiles para exhibicion y almacenamiento. La calidez del acabado nogal realza su presencia en cualquier entorno, creando un contraste sofisticado y envolvente. Perfecta para ambientes modernos que valoran lo estetico tanto como lo util, esta mesa es un reflejo de las tendencias actuales en diseño de interiores, donde la forma y la esencia se complementan.
-                    </p>
-                    <p><strong>Características</strong><br>
-                        <ul>
-                            <li>Melamina Pelikano nogal</li>
-                            <li>Frente: 51cm; Prof: 35cm; Alto: 60cm</li>
-                            <li>Peso maximo que soporta: 4.98kg</li>
-                        </ul>
-                    </p>
-                    <button>Añadir a la Canasta</button>
+                <article class="col-12 col-md-4">
+                    <div class="card h-100 p-3 shadow-sm d-flex flex-column">
+                        <h3 class="card-title h4 fw-bold" style="color:#534332">Mesa Auxiliar Cirel</h3>
+                        <span class="badge fs-6 mb-2 align-self-start" style="background-color:#9F7E4A">¡En Oferta!</span>
+                        <figure class="text-center mb-3">
+                            <img class="img-fluid rounded" style="max-height:320px" src="https://kalea.com.hn/cdn/shop/files/BC0509_600x.jpg?v=1751387522" alt="Mesa Auxiliar Cirel">
+                            <figcaption class="figure-caption mt-2">Mesa Auxiliar Cirel</figcaption>
+                        </figure>
+                        <p class="fs-4 mb-2"><strong style="color:#454F2D">L 3,595.00</strong><del class="text-muted fs-6 ms-2">L 5,995.00</del></p>
+                        <p class="mb-3"> <strong>Descripcion</strong><br>
+                            Una pieza que evoca equilibrio y expresion en cada trazo geometrico. Esta mesa de centro en melamina color nogal fusiona arte y funcionalidad en una silueta contemporanea que desafia lo convencional. Su diseño en niveles no solo aporta dinamismo visual, sino tambien practicidad, al ofrecer espacios versatiles para exhibicion y almacenamiento. La calidez del acabado nogal realza su presencia en cualquier entorno, creando un contraste sofisticado y envolvente. Perfecta para ambientes modernos que valoran lo estetico tanto como lo util, esta mesa es un reflejo de las tendencias actuales en diseño de interiores, donde la forma y la esencia se complementan.
+                        </p>
+                        <p class="mb-3"><strong>Características</strong><br>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Melamina Pelikano nogal</li>
+                                <li class="list-group-item">Frente: 51cm; Prof: 35cm; Alto: 60cm</li>
+                                <li class="list-group-item">Peso maximo que soporta: 4.98kg</li>
+                            </ul>
+                        </p>
+                        <button class="btn text-white mt-auto" style="background-color:#797F3E; border-color:#797F3E">Añadir a la Canasta</button>
+                    </div>
                 </article>
             </section>
 
             <section id="Cotizaciones">
-                <div>
+                <div class="mb-3">
                     <h2>Calculadora Visual de Pedidos</h2>
-                    <span>* Descuento institucional del 12% a partir de 10 piezas</span>
+                    <span class="badge fs-6" style="background-color:#9F7E4A">* Descuento institucional del 12% a partir de 10 piezas</span>
                 </div>
-                <div>
+                <div class="card card-body shadow-sm">
                     <form action="#" method="post">
                         <fieldset>
-                            <legend>Datos de Cotización</legend>
+                            <legend class="h5 fw-bold" style="color:#534332">Datos de Cotización</legend>
 
-                            <label for="unidades">Cantidad de Piezas a Cotizar</label>
-                            <input type="number" name="unidades" id="unidades" min="1" required>
+                            <label class="form-label mt-3" for="unidades">Cantidad de Piezas a Cotizar</label>
+                            <input class="form-control" type="number" name="unidades" id="unidades" min="1" required>
 
-                            <label for="opcion_mueble">Tipo de mueble</label>
-                            <select id="opcion_mueble" name="opcion_mueble" required>
+                            <label class="form-label mt-3" for="opcion_mueble">Tipo de mueble</label>
+                            <select class="form-select" id="opcion_mueble" name="opcion_mueble" required>
                                 <option value="" selected disabled>Seleccione un mueble...</option>
                                 <option value="3295">Beanbag Cuero Textil - L. 3,295</option>
                                 <option value="2995">Librera Basic Angosta Alta - L. 2,995</option>
@@ -325,8 +353,8 @@
                                 <option value="3595">Mesa Auxiliar Cirel - L. 3,595</option>
                             </select>
 
-                            <label for="destino">Destino y flete sobre la CA-5</label>
-                            <select id="destino" name="destino" required>
+                            <label class="form-label mt-3" for="destino">Destino y flete sobre la CA-5</label>
+                            <select class="form-select" id="destino" name="destino" required>
                                 <option value="" selected disabled>Seleccione un destino...</option>
                                 <option value="300">Siguatepeque/Comayagua - Flete: L. 300</option>
                                 <option value="1000">Tegucigalpa o SPS - Flete: L. 1,000</option>
@@ -334,27 +362,27 @@
                             </select>
                         </fieldset>
 
-                        <button type="button">Calcular Presupuesto</button>
+                        <button type="button" class="btn text-white mt-4" style="background-color:#797F3E; border-color:#797F3E">Calcular Presupuesto</button>
                     </form>
                 </div>
             </section>
 
             <section>
                 <h2>Fichas Técnicas y Certificación Forestal</h2>
-                <p>Comparativa mobiliario según especie, humedad y certificación.</p>
+                <p class="text-secondary">Comparativa mobiliario según especie, humedad y certificación.</p>
 
 
-                <div>
-                    <table>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle caption-top">
                         <caption>Tabla comparativa de fichas técnicas por línea de mueble</caption>
-                        <thead>
+                        <thead style="--bs-table-bg:#534332; --bs-table-color:#fff">
                             <tr>
-                                <th>Código</th>
-                                <th>Línea de Mueble</th>
-                                <th>Especie Forestal</th>
-                                <th>Humedad en Horno [%]</th>
-                                <th>Resistencia Mecánica</th>
-                                <th>Certificación Ambiental ICF</th>
+                                <th scope="col">Código</th>
+                                <th scope="col">Línea de Mueble</th>
+                                <th scope="col">Especie Forestal</th>
+                                <th scope="col">Humedad en Horno [%]</th>
+                                <th scope="col">Resistencia Mecánica</th>
+                                <th scope="col">Certificación Ambiental ICF</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -364,7 +392,7 @@
                                 <td>Caoba</td>
                                 <td>8%</td>
                                 <td>Alta (85 MPa)</td>
-                                <td><span>Certificada ICF</span></td>
+                                <td><span class="badge" style="background-color:#797F3E">Certificada ICF</span></td>
                             </tr>
                             <tr>
                                 <td>MB-002</td>
@@ -372,7 +400,7 @@
                                 <td>Cedro</td>
                                 <td>10%</td>
                                 <td>Media (62 MPa)</td>
-                                <td><span>Certificada ICF</span></td>
+                                <td><span class="badge" style="background-color:#797F3E">Certificada ICF</span></td>
                             </tr>
                             <tr>
                                 <td>MB-003</td>
@@ -380,7 +408,7 @@
                                 <td>Pino Oocarpa</td>
                                 <td>12%</td>
                                 <td>Media (55 MPa)</td>
-                                <td><span>En trámite</span></td>
+                                <td><span class="badge" style="background-color:#9F7E4A">En trámite</span></td>
                             </tr>
                             <tr>
                                 <td>MB-004</td>
@@ -388,7 +416,7 @@
                                 <td>Pino Oocarpa</td>
                                 <td>12%</td>
                                 <td>Media (52 MPa)</td>
-                                <td><span>Certificada ICF</span></td>
+                                <td><span class="badge" style="background-color:#797F3E">Certificada ICF</span></td>
                             </tr>
                             <tr>
                                 <td>MB-005</td>
@@ -396,27 +424,27 @@
                                 <td>Caoba</td>
                                 <td>9%</td>
                                 <td>Alta (80 MPa)</td>
-                                <td><span>Certificada ICF</span></td>
+                                <td><span class="badge" style="background-color:#797F3E">Certificada ICF</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
         </main>
-    </body>
-    <footer class="py-5 mt-auto border-top bg-dark text-light">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <footer class="py-5 mt-auto text-light" style="background-color:#394032">
             <div class="container">
                 <div class="row g-4">
 
-                    <div class="col-12 col-md-4">
-                        <h6>Instalaciones Industriales</h6>
-                        <ul>
-                            <li><i class="bi bi-geo-alt-fill"></i> KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-0199</li>
-                            <li><i class="bi bi-telephone-fill"></i> Blvd. Morazán, Tegucigalpa - Tel: 2238-0199</li>
-                            <li><i class="bi bi-envelope-fill"></i> exportaciones@acuicoladelgolfo.hn</li>
+                    <div class="text-center small border-top pt-3 mt-4">
+                        <h6 class="text-uppercase fw-bold">Instalaciones Industriales</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-geo-alt-fill me-2" style="color:#9F7E4A"></i> KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-0199</li>
+                            <li class="mb-2"><i class="bi bi-geo-alt-fill me-2" style="color:#9F7E4A"></i> Blvd. Morazán, Tegucigalpa - Tel: 2238-0199</li>
+                            <li class="mb-2"><i class="bi bi-envelope-fill" style="color:#9F7E4A"></i> mublesig@mublesig.hn</li>
                             
-                            <nav>
-                                <ul>
+                            <nav class="text-center small border-top pt-3 mt-4">
+                                <ul class="list-unstyled d-flex gap-3 mt-3 justify-content-center">
                                     <li>
                                         <a href="https://www.facebook.com/" target="_blank" >
                                             <img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40">
@@ -432,19 +460,21 @@
                         </ul>
                     </div>
 
-                    <div class="col-12 col-md-4">
+                    <div class="text-center small border-top pt-3 mt-4">
                         <h6>Contexto Académico UNAH</h6>
                         <p>
                             <strong>ISC-305 Programación Web | III PAC 2026</strong><br>
-                            Examen 1 
+                            Examen 1<br>
+                            Edixon Fabricio Muñoz Carranza | 20221030630
                         </p>
                     </div>
 
                 </div>
 
-                <div>
+                <div class="text-center small border-top pt-3 mt-4">
                     &copy; Mublesig Honduras 2024. Todos los derechos reservados.
                 </div>
             </div>
-    </footer>
+        </footer>
+    </body>
 </html>
